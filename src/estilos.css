@@ -1,37 +1,77 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  #palabra {
-    font-size: 2em;
-    text-align: center;
-    margin: 1em;
-  }
-  
-  #intentos, #letrasUsadas {
-    margin: 1em;
-  }
-  
-  #letras {
-    font-weight: bold;
-  }
-  
-  form {
-    text-align: center;
-    margin: 1em;
-  }
-  
-  label {
-    font-weight: bold;
-  }
-  
-  input[type="text"] {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F0F2F5;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #3C4858;
+  margin: 0.5em;
+}
+
+#palabra {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 1.5em;
+  color: #4CAF50;
+}
+
+#intentos {
+  margin: 1em;
+  font-size: 1.5em;
+  color: #F44336;
+}
+
+#letrasUsadas {
+  margin: 1em;
+  font-size: 1.5em;
+  color: #3F51B5;
+}
+
+#letras {
+  font-weight: bold;
+  color: #757575;
+}
+
+form {
+  text-align: center;
+  margin: 1.5em;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin: 0.5em;
+  color: #3C4858;
+}
+
+input[type="text"] {
+  font-size: 1.5em;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  border: none;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  border: none;
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #388E3C;
+} input[type="text"] {
     width: 2em;
     margin-right: 0.5em;
   }
