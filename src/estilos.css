@@ -1,34 +1,46 @@
-/* Estilos para el botón "Jugar" */
-button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 20px;
-  transition-duration: 0.4s;
-}
-
-button:hover {
-  background-color: #3e8e41;
-}
-
-/* Estilos para la sección del juego de ahorcado */
-.ahorcado {
-  display: none;
-  margin-top: 20px;
-  text-align: center;
-}
-
-/* Estilos para el mensaje de éxito */
-.exito {
-  display: none;
-  margin-top: 20px;
-  text-align: center;
-  font-size: 24px;
-}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #palabra {
+    font-size: 2em;
+    text-align: center;
+    margin: 1em;
+  }
+  
+  #intentos, #letrasUsadas {
+    margin: 1em;
+  }
+  
+  #letras {
+    font-weight: bold;
+  }
+  
+  form {
+    text-align: center;
+    margin: 1em;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 2em;
+    margin-right: 0.5em;
+  }
+  
+  button[type="submit"] {
+    padding: 0.5em;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }

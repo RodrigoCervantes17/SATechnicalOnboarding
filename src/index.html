@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>¡Declaración de amor!</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Juego del ahorcado</title>
+    <link rel="stylesheet" href="estilos.css">
   </head>
   <body>
-    <h1>¡Declaración de amor!</h1>
-    <p>Haz clic en el botón "Jugar" para empezar el juego de ahorcado.</p>
-    <button id="jugar">Jugar</button>
-    <div class="ahorcado">
-      <p>Adivina la palabra:</p>
-      <p id="palabra-oculta"></p>
-      <p>Ingresa una letra:</p>
-      <input type="text" id="letra">
-      <button id="adivinar">Adivinar</button>
-      <p id="mensaje-consola"></p>
-    </div>
-    <div class="exito">
-      <p>¡Sí quiero ser tu novia!</p>
-    </div>
-    <script src="juego-ahorcado.js"></script>
+    <h1>Juego del ahorcado</h1>
+    <div id="palabra"></div>
+    <div id="intentos">Intentos restantes: <span id="numIntentos">6</span></div>
+    <div id="letrasUsadas">Letras usadas: <span id="letras"></span></div>
+    <form id="formulario">
+      <label for="letra">Ingresa una letra:</label>
+      <input type="text" id="letra" name="letra" maxlength="1">
+      <button type="submit">Enviar</button>
+    </form>
+    <script src="juego.js"></script>
   </body>
 </html>
